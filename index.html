@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apocalypse 2099</title>
+  <meta name="description" content="在核火與廢墟之後，人類的最後據點誕生於數位空間。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Chakra+Petch:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <canvas id="bg" class="bg" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="logo">APOCALYPSE<span>2099</span></div>
+    <nav class="nav">
+      <a href="#intro">序章</a>
+      <a href="#world">世界觀</a>
+      <a href="#gallery">檔案庫</a>
+      <a href="#contact">聯絡點</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <h1>最後避難所</h1>
+      <p>「訊號微弱，但我們仍在。」</p>
+      <a class="cta" href="#intro">進入基地</a>
+    </section>
+
+    <section id="intro" class="section">
+      <h2>序章：訊號殘響</h2>
+      <p>
+        2099 年，災變洗禮大地。你正連線到分佈式庇護所的公開介面。
+        這裡收錄幸存者口述史、碎片化影像與求生指令集。
+      </p>
+      <div class="cards">
+        <article class="card">
+          <h3>生存守則 v1.2</h3>
+          <p>低溫、低光、低噪。先活下來，再談未來。</p>
+        </article>
+        <article class="card">
+          <h3>電磁風暴迴避</h3>
+          <p>72 小時前的太陽黑子爆發紀錄與路線規劃。</p>
+        </article>
+        <article class="card">
+          <h3>口述史採集</h3>
+          <p>我們不是資料。我們是記憶。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="world" class="section">
+      <h2>世界觀：碎裂的城市網</h2>
+      <p>
+        城市被切割成孤島，訊號於電離層折返。基地以「節點－走廊－避難艙」構成，
+        每個節點皆能離線運作並於安全時段同步。
+      </p>
+      <ul class="timeline">
+        <li><span>2097</span> 斷鏈年：全球供應鏈崩潰。</li>
+        <li><span>2098</span> 沉默季：廣域停電與訊號中斷。</li>
+        <li><span>2099</span> 重啟：分散式基地上線。</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>檔案庫：視覺殘片</h2>
+      <div class="gallery">
+        <figure><img src="assets/placeholder1.svg" alt="廢墟城市剪影"><figcaption>區段 A-13</figcaption></figure>
+        <figure><img src="assets/placeholder2.svg" alt="廢棄衛星站"><figcaption>衛星站 K</figcaption></figure>
+        <figure><img src="assets/placeholder3.svg" alt="地下走廊"><figcaption>走廊 L-Δ</figcaption></figure>
+        <figure><img src="assets/placeholder4.svg" alt="機械殘骸"><figcaption>機械殘骸</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>聯絡點</h2>
+      <p>上傳你的訊息碎片至 <a href="mailto:echo@apocalypse.local">echo@apocalypse.local</a></p>
+      <form class="form" onsubmit="event.preventDefault(); alert('訊息已排入離線佇列。');">
+        <input type="text" placeholder="呼號 / Callsign" required>
+        <input type="email" placeholder="回傳信箱" required>
+        <textarea placeholder="訊息內容（將於安全時段同步）" required></textarea>
+        <button type="submit">發送</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2099 Apocalypse Studio — Maintain the Signal.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
